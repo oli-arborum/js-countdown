@@ -12,6 +12,6 @@ Da die Sprache in unserer Gemeinde Deutsch ist, sind auch alle Texte und Ausgabe
 Online-Demo auf http://oli-arborum.github.io/js-countdown/countdown.html
 
 ## Lizenz
-js-countdown steht unter der GPL3 (siehe auch Datei "LICENSE").
+js-countdown steht unter der GPL3 (siehe auch Datei "[LICENSE](https://raw.githubusercontent.com/oli-arborum/js-countdown/gh-pages/LICENSE)").
 
-Darüber hinaus würde ich mich sehr freuen, wenn ich eine Mitteilung bekomme, wenn und wo der Countdown eingesetzt bzw. für was er verwendet wird. 
+*Darüber hinaus würde ich mich sehr freuen, wenn ich eine Mitteilung bekomme, wenn und wo der Countdown eingesetzt bzw. für was er verwendet wird.*
