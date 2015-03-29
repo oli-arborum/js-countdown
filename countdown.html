@@ -67,7 +67,7 @@
 			m.innerHTML = "Unbekanntes Zeitformat! Bitte Eingabe überprüfen!"
 		} else {
 			// o.innerHTML = "xyz - " + dest_time;
-			childWin = window.open("cd.html","MyCountdown","height=600,width=800,toolbar=no,location=no");
+			childWin = window.open("cd.html","MyCountdown","top=300,left=200,height=600,width=800,resizable=yes,toolbar=no,location=no");
 			if( timer != null ) {
 				clearInterval(timer);
 			}
@@ -94,16 +94,35 @@
 		}
 		o.innerHTML = outString;
 	}
+	
+	function closeWindow()
+	{
+		if( childWin != null ) {
+			childWin.close();
+			var m = document.getElementById("msg");
+			m.innerHTML = "";
+		}
+	}
 	// -->
 	</script>
 </head>
 <body>
-<h1>Countdown Konfiguration</h1>
+<h1>StaMi Countdown - Konfiguration</h1>
 <form name="cd_config">
 	Ziel-Zeit: <input type="time" size="8" value="10:00:00" name="dest_time" id="id_dest_time"/>
-	<input type="button" value="start" onclick="start_countdown();">
+	&nbsp;
+	<input type="button" value="start" onclick="start_countdown();"/>
+	&nbsp;
+	<input type="button" value="Fenster schließen" onclick="closeWindow();"/>
 </form>
 <div id="msg"></div>
-<p><b>Hinweis:</b> Die Uhrzeit des Betriebssystems muss korrekt gestellt sein!</p>
+<p><b>Hinweise:</b>
+<ul>
+  <li>Die Uhrzeit des Betriebssystems muss korrekt gestellt sein!</li>
+  <li>Beim Internet Explorer vor Klick auf "Start" auf <b>"Geblockte Inhalte zulassen"</b> (unten) klicken!</li>
+</ul>
+</p>
+<hr/>
+<p style="font-size:80%;text-align:right;"><i>StaMi Countdown v0.9.2<br/>Rückfragen an Oliver Baum!</i></p>
 </body>
 </html>
