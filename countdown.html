@@ -100,10 +100,10 @@
 		var now = new Date();
 		var diff = dest - now;
 		var outString = "jetzt";
-		if( diff > 500 ) { // 500ms minimal difference to determine "now"
+		if( diff > 1000 ) { // 1000ms minimal difference to determine "now"
 			var hours = Math.floor(diff / (60*60*1000));
 			var minutes = Math.floor( (diff % (60*60*1000)) / (60*1000) );
-			var seconds = Math.round( (diff % (60*1000)) / 1000 );
+			var seconds = Math.floor( (diff % (60*1000)) / 1000 );
 			outString = "in ";
 			if( hours > 0 ) {
 				outString += hours.pad() + "h ";
